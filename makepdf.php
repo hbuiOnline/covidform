@@ -8,7 +8,7 @@ $data = "";
 if (isset($_POST['request-submit'])) {
   $phoneNum = $_POST['phonenum'];
 
-  $sql = "SELECT *, DATE_FORMAT(userDateConsent, '%m/%d/%y') AS dateFormatted FROM formsubmit WHERE userPhone = ?;";
+  $sql = "SELECT *, convert_tz(dateSubmitted, '+0:00', '-05:00') AS dateFormatted FROM formsubmit WHERE userPhone = ?;";
 
   $stmt = mysqli_stmt_init($conn);
   if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -25,7 +25,7 @@ if (isset($_POST['request-submit'])) {
       //Add SDO_DAS_DataObject
       $data .= '<strong>Cusomter Name: </strong>' . $row['userFirst'] . " ". $row['userLast']. '<br/>';
       $data .= '<strong>Phone Number: </strong>' . $row['userPhone'] . '<br/>';
-      $data .= '<strong>Date Consented: </strong>' . $row['dateFormatted'] . " " . $row['userTimeConsent']. '<br/>';
+      $data .= '<strong>Date Consented: </strong>' . $row['dateFormatted'] . '<br/>';
       $data .= '<hr>';
       $data .= '<p>To prevent the spread of contagious viruses and to help protect each other, I understand that I will have to follow the salon’s strict guidelines. Required to wear a mask at all time.</p>';
       $data .= '<p><strong>'.$row['q1'].'</strong></p>';

@@ -47,48 +47,7 @@
       <input type="text" name="firstname" required placeholder="First Name"/>
       <input type="text" name = "lastname" required placeholder="Last Name"/>
       <input type="tel" name="phonenum" required placeholder="Phone Number">
-      <label>Date Consent</label>
-      <input type="date" name="dateconsent">
-      <label>Time</label>
-      <div class="row">
-          <div class="col-sm-4">
-            <select name="hours">
-                <option disabled="disabled" selected="selected">Hours</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>
-            <div class="select-dropdown"></div>
-          </div>
-          <div class="col-sm-4">
-                <select name="minutes">
-                    <option disabled="disabled" selected="selected">Minutes</option>
-                    <option value="00">00</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="30">30</option>
-                    <option value="40">40</option>
-                    <option value="50">50</option>
-                </select>
-                <div class="select-dropdown"></div>
-          </div>
-          <div class="col-sm-4">
-                <select name="ampm">
-                    <option value="am">AM</option>
-                    <option value="pm">PM</option>
-                </select>
-                <div class="select-dropdown"></div>
-          </div>
-      </div>
+      
       <hr>
       <p><strong>To prevent the spread of contagious viruses and to help protect each other, I understand that I will have to follow the salon’s strict guidelines. Required to wear a mask at all time.</strong></p>
       <label class="radio-container">By checking this box I understand and accept this statement.

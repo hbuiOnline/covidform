@@ -7,12 +7,6 @@ if (isset($_POST['form-submit'])) {
   $firstName = $_POST['firstname'];
   $lastName = $_POST['lastname'];
   $phoneNum = $_POST['phonenum'];
-  $dateConsent = $_POST['dateconsent'];
-  $hour = $_POST['hours'];
-  $minute = $_POST['minutes'];
-  $ampm = $_POST['ampm'];
-
-  $timeConsent = $hour. ":" . $minute . " " . $ampm;
 
   $q1 = $_POST['q1'];
   $q2 = $_POST['q2'];
@@ -24,7 +18,7 @@ if (isset($_POST['form-submit'])) {
   $q8 = $_POST['q8'];
   $verify = $_POST['verify'];
 
-  $sql = "INSERT INTO formsubmit (userFirst, userLast, userPhone, userDateConsent, userTimeConsent, q1,q2,q3,q4,q5,q6,q7,q8,verify) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+  $sql = "INSERT INTO formsubmit (userFirst, userLast, userPhone, q1,q2,q3,q4,q5,q6,q7,q8,verify) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -32,7 +26,7 @@ if (isset($_POST['form-submit'])) {
       exit();
     }
     else {
-      mysqli_stmt_bind_param($stmt, "ssssssssssssss", $firstName, $lastName, $phoneNum, $dateConsent,$timeConsent, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8, $verify);
+      mysqli_stmt_bind_param($stmt, "ssssssssssss", $firstName, $lastName, $phoneNum, $q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8, $verify);
       mysqli_stmt_execute($stmt);
       header("Location: ../index.php?form=submitted");
       exit();
