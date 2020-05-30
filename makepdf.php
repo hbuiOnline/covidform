@@ -22,7 +22,7 @@ if (isset($_POST['request-submit'])) {
     while ($row = mysqli_fetch_array($result)) {
       $data .= '<h1> COVID-19 Consent Form </h1>';
       $data .= '<h2>H & H Nail Spa</h2>';
-      $data .= '<h3>13492 Research Blvd Ste 180 Austin, TX 78750</h3>'
+      $data .= '<h3>13492 Research Blvd Ste 180 Austin, TX 78750</h3>';
 
       //Add SDO_DAS_DataObject
       $data .= '<strong>Cusomter Name: </strong>' . $row['userFirst'] . " ". $row['userLast']. '<br/>';
