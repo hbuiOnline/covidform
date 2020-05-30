@@ -8,7 +8,7 @@ $data = "";
 if (isset($_POST['request-submit'])) {
   $phoneNum = $_POST['phonenum'];
 
-  $sql = "SELECT *, convert_tz(dateSubmitted, '+0:00', '-05:00') AS dateFormatted FROM formsubmit WHERE userPhone = ?;";
+  $sql = "SELECT *, DATE_FORMAT(convert_tz(dateSubmitted, '+0:00', '-05:00'), '%m/%d/%Y %r') AS dateFormatted FROM formsubmit WHERE userPhone = ?;";
 
   $stmt = mysqli_stmt_init($conn);
   if(!mysqli_stmt_prepare($stmt, $sql)){
