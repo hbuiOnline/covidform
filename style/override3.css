@@ -1,0 +1,49 @@
+a.nav-link{
+  color: rgb(247, 247, 247) !important;
+}
+
+button.navbar-toggler{
+  color: rgb(247, 247, 247) !important;
+  background-color: rgb(247, 247, 247) !important;
+}
+
+nav.nav.flex-column {
+  float:left;
+  margin-right:50px;
+  z-index: 1;
+  /* position: fixed; */
+}
+
+div#tickettable_info.dataTables_info{
+  color:rgb(255, 255, 255) !important;
+}
+
+thead.tablehead{
+  color: rgb(247, 247, 247) !important;
+}
+
+label {
+  color: rgb(247, 247, 247) !important;
+
+}
+
+label.optionlist{
+  color:rgb(1, 1, 1) !important;
+}
+
+div.col {
+  padding: 15px !important;
+}
+
+div.col.rightcol{
+  padding: 15px 15px 15px 0px !important;
+}
+
+input.form-control{
+  margin: 0px;
+  width: 91%;
+}
+
+/* select#exampleFormControlSelect2.form-control{
+  width: 80%;
+} */
