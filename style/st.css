@@ -82,10 +82,13 @@
 
 .login-page .form .submiterror {
   color: #eb0000;
+  text-align: center;
+
 }
 
 .login-page .form .submitsuccess {
   color: #34eb55;
+  text-align: center;
 }
 
 .form .buglogo {
