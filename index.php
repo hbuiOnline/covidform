@@ -30,6 +30,20 @@
       <h2 class="address">13492 Research Blvd Ste 180 Austin, TX 78750</h2>
       <hr/>
       <h2 class="title"><strong>COVID-19 NAILS SALON SERVICE CONSENT FORM</strong></h2>
+      <?php
+        if (isset($_GET['form'])) {
+          if ($_GET['form'] == 'submitted') {
+            echo '<p class="submitsuccess"> Form Submitted Successfully!</p>';
+          }
+        }
+
+        elseif (isset($_GET['error'])) {
+          if ($_GET['error'] == 'sqlerror') {
+            echo '<p class="submiterror"> Error With DB!</p>';
+          }
+        }
+
+      ?>
       <input type="text" name="firstname" required placeholder="First Name"/>
       <input type="text" name = "lastname" required placeholder="Last Name"/>
       <input type="tel" name="phonenum" required placeholder="Phone Number">

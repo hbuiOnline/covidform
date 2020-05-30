@@ -28,7 +28,7 @@ if (isset($_POST['form-submit'])) {
 
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
-      header("Location: ../project.php?error=sqlerror");
+      header("Location: ../index.php?error=sqlerror");
       exit();
     }
     else {

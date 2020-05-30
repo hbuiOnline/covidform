@@ -80,11 +80,11 @@
   padding-top: 20px;
 }
 
-.login-page .form .signuperror {
+.login-page .form .submiterror {
   color: #eb0000;
 }
 
-.login-page .form .signupsuccess {
+.login-page .form .submitsuccess {
   color: #34eb55;
 }
 
