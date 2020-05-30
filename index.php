@@ -102,7 +102,7 @@
       </label>
       <hr>
 
-      <p><strong>I understand that air travel is significant increases my risk of contracting and transmitting the COVID-19 virus. I know that the CDC, OSHA and ILLINOIS STATE BOARD of cosmetology recommend cocial distancing of at least 6 feet.</strong></p>
+      <p><strong>I understand that air travel is significant increases my risk of contracting and transmitting the COVID-19 virus. I know that the CDC, OSHA and TEXAS STATE BOARD of cosmetology recommend social distancing of at least 6 feet.</strong></p>
       <label class="radio-container">By checking this box I understand and accept this statement.
           <input type="radio" value="Yes" name="q3">
       </label>
