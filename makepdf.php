@@ -33,7 +33,7 @@ if (isset($_POST['request-submit'])) {
       $data .= '<p>I knowingly and willingly consent to have a nails, pedicure, waxing treatment during the Covid-19 pandemic.</p>';
       $data .= '<p><strong>'.$row['q2'].'</strong></p>';
       $data .= '<hr>';
-      $data .= '<p>I understand that air travel is significant increases my risk of contracting and transmitting the COVID-19 virus. I know that the CDC, OSHA and ILLINOIS STATE BOARD of cosmetology recommend cocial distancing of at least 6 feet.</p>';
+      $data .= '<p>I understand that air travel is significant increases my risk of contracting and transmitting the COVID-19 virus. I know that the CDC, OSHA and TEXAS STATE BOARD of cosmetology recommend social distancing of at least 6 feet.</p>';
       $data .= '<p><strong>'.$row['q3'].'</strong></p>';
       $data .= '<hr>';
       $data .= '<p>I understand the COVID-19 virus has a long incubation period during which carries of the virus may not show symptoms and still be highly contagious. It is impossible to determine who has it, and who does not give the current limits in virus testing, therefore I will not hold the salon responsible if I were to contract COVID-19 infection around and during the time of services.</p>';
